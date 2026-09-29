@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Imagens</title>
+</head>
+
+<body>
+    <h1>Trabalhando com imagens</h1>
+    <hr>
+
+    <p>Trabalhando com o elemento &lt;img&gt;</p>
+    <img src="cachorro-pirulito.jpg" alt="Lindo cachorro Doberman lambendo um pirulito de coração vermelho" width="300"
+        height="300">
+
+    <p>Entendendo os atributos:</p>
+    <ul>
+        <li> <strong>src</strong> - Source/fonte: É o caminho onde a imagem está hospedada/armazenada. Pode ser um
+            caminho local ou um link direto da internet</li>
+
+        <li> <strong>alt</strong> - alt/alternative: É um texto descritivo que aparece caso a imagem não carregue ou
+            seja lida por leitores de tela. É crucial para acessibilidade e como fallback.</li>
+    </ul>
+
+    <h3>Imagem via link</h3>
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ050WQ6wcLwoDXj9zlXVT7mc5O3oeYe8GjmACRm06h72x9Md7a"
+        alt="Lindo cachorro Doberman lambendo um pirulito de coração vermelho" width="300" height="300">
+
+    <h3>Elemento Figure</h3>
+    <p>O elemento &lt;figure&gt; é usado para agrupar uma imagem e sua legenda, proporcionando contexto adicional.</p>
+    <figure>
+        <img src="cachorro-pirulito.jpg" alt="Lindo cachorro Doberman lambendo um pirulito de coração vermelho"
+            width="300" height="300">
+        <figcaption>Um cachorro Doberman lambendo um pirulito de coração vermelho</figcaption>
+    </figure>
+
+    <h3>Elemento picture</h3>
+    <p>O elemento &lt;picture&gt; serve para controlarmos qual arquivo será exibido, dependendo das condições do
+        dispositivo ou do navegador.</p>
+
+    <picture>
+        <source media="(max-width: 600px)" srcset="cachorro-pirulito-mobile.jpg">
+        <img src="cachorro-pirulito.jpg" alt="Lindo cachorro Doberman lambendo um pirulito de coração vermelho"
+            width="300" height="300">
+
+        <source media="(min-width: 601px)" srcset="cachorro-pirulito-desktop.jpg">
+
+        <!-- img como fallback (plano B) - Caso não seja possível exibir as outras imagens acima, o navegador irá exibir essa. -->
+        <img src="cachorro-pirulito.jpg" alt="Lindo cachorro Doberman lambendo um pirulito de coração vermelho"
+            width="300" height="300">
+    </picture>
+
+    <hr>
+    <h2>Sobre os tipos de imagens</h2>
+    <p>Você pode encontrar um acervo muito grande de tipos de imagens. A escolha da imagem certa pode elevar a
+        performance do seu site. Veja a lista abaixo:</p>
+    <ul>
+        <li><strong>JPEG (ou JPG)</strong> - Bom para fotografias e imagens com muitas cores. Possui compressão com
+            perda de qualidade, portanto tentar otimizar demais pode afetar a aparência.</li>
+        <li><strong>PNG</strong> - Suporta transparência e é ideal para imagens que precisam preservar certos detalhes,
+            como por exemplo: logotipos, imagens que precisam de transparência e etc.</li>
+        <li><strong>GIF</strong> - Suporta animações e é limitado a 256 cores. Ideal para pequenos gráficos animados.
+        </li>
+        <li><strong>SVG</strong> - Formato vetorial escalável, ideal para logotipos e ícones. Mantém a qualidade em
+            qualquer tamanho.</li>
+        <li><strong>WebP</strong> - Formato recente desenvolvido com foco na web. Além de também suportar transparência
+            e animações, é excelente para trabalhar com imagens em alta definição. Ótimo para fotografias, imagens de
+            produtos etc.</li>
+        <li><strong>AVIF</strong> - Formato recente que oferece compressão eficiente e alta qualidade de imagem. Tem
+            alto desempenho.</li>
+    </ul>
+</body>
+
+</html>

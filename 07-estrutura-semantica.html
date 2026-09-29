@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site sobre a estrutura semântica do HTML.">
+    <title>Sobre estrutura semântica | HTML</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #1d1d1d;
+            color: white;
+        }
+
+        header {
+            background-color: brown;
+        }
+
+        section {
+            background-color: deeppink;
+            border: 4px solid greenyellow;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: tan;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header = representa o cabeçalho da página ou seção -->
+    <header>
+        <h1>Logo</h1>
+
+        <!-- nav/navigation = representa uma área de navegação -->
+        <nav>
+
+            <!-- agrupamos os itens da navegação dentro de uma lista por conta de acessibilidade. -->
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+            <!-- <a href="/">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a> -->
+        </nav>
+    </header>
+
+    <!-- main/principal = representa o conteúdo principal da página ou seção. Uma página deve ter apenas UM CONTEÚDO principal. -->
+    <main>
+        <section>
+            <h2>Projetos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptates. A incidunt aliquam, nihil
+                quod soluta laborum consequuntur esse natus obcaecati nulla ducimus illum expedita, mollitia reiciendis
+                quis explicabo unde.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptates. A incidunt aliquam, nihil
+                quod soluta laborum consequuntur esse natus obcaecati nulla ducimus illum expedita.</p>
+        </section>
+
+        <section>
+            <h2>Contato</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptates. A incidunt aliquam, nihil
+                quod soluta laborum consequuntur esse natus obcaecati nulla ducimus illum expedita, mollitia reiciendis
+                quis explicabo unde.</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro voluptas sunt vel voluptatem minus
+                ratione, amet omnis quasi dignissimos? Beatae, ab accusantium nobis nemo libero repudiandae velit fuga
+                sunt impedit quae itaque voluptate unde maiores commodi inventore pariatur officia iste blanditiis nam
+                provident, officiis quos. Animi modi laborum repudiandae quibusdam, sed fugiat necessitatibus ullam
+                omnis quam harum voluptatem a magnam provident possimus labore nobis, saepe suscipit velit architecto
+                quos obcaecati nulla commodi. Expedita quidem, nemo officia aliquam voluptatum enim consectetur sint
+                aperiam eum molestias quasi sed voluptates voluptatem vitae, repellat harum consequuntur aliquid non.
+                Quod consectetur quos maiores minima porro!</p>
+
+            <!-- article/artigo = representa um conteúdo que faz sentido de maneira independente. -->
+            <h2>Últimos Artigos</h2>
+
+            <article>
+                <h3>Aprendendo HTML</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptates. A incidunt aliquam,
+                    nihil quod soluta laborum consequuntur esse natus obcaecati nulla ducimus illum expedita, mollitia
+                    reiciendis
+                    quis explicabo unde.</p>
+            </article>
+
+            <article>
+                <h3>Aprendendo CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptates. A incidunt aliquam,
+                    nihil quod soluta laborum consequuntur esse natus obcaecati nulla ducimus illum expedita, mollitia
+                    reiciendis
+                    quis explicabo unde.</p>
+            </article>
+
+            <article>
+                <h3>Aprendendo JS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptates. A incidunt aliquam,
+                    nihil quod soluta laborum consequuntur esse natus obcaecati nulla ducimus illum expedita, mollitia
+                    reiciendis
+                    quis explicabo unde.</p>
+            </article>
+        </section>
+
+        <!-- aside/sidebar/barra-lateral = representa conteúdo complementar que não é essencial para o entendimento do conteúdo principal. É possível adicionar seções e artigos dentro do conteúdo lateral. -->
+        <aside>
+            <h2>Artigos relacionados</h2>
+            <ul>
+                <li><a href="aprenda-java.html">Aprenda Java</a></li>
+                <li><a href="domine-react.html">Domine React</a></li>
+                <li><a href="explore-ux-ui.html">Explore UX e UI</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- footer/rodapé = representa o rodapé da página ou seção, geralmente contendo informações de copyright, links para páginas importantes, redes sociais etc. -->
+    <footer>
+        <p>&copy; 2026 - Jotape</p>
+
+        <address>
+            <a href="mailto:email@email.com">Email: email@email.com</a>
+            <a href="tel:+5511999999999">Telefone: +55 (11) 99999-9999</a>
+            <p>Avenida Paulista, 67 - São Paulo/SP</p>
+
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            </ul>
+        </address>
+    </footer>
+</body>
+
+</html>

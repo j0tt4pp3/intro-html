@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas do HTML</title>
+</head>
+
+<body>
+    <h1>Sobre elementos de listas</h1>
+    <p>Listas são uma das coisas mais importantes no <strong>HTML</strong>. Elas aparecem o tempo todo em páginas web.
+    </p>
+
+    <hr>
+    <h2>Conhecendo as listas</h2>
+
+    <h3>Lista não ordenada</h3>
+    <p>Usamos a lista não ordenada quando <strong>a ordem dos itens não é importante</strong>.</p>
+
+    <!-- ul = unordered list/lista não ordenada -->
+    <ul>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Macarrão</li>
+        <li>Café</li>
+        <li>Banana</li>
+    </ul>
+
+    <h3>Lista ordenada</h3>
+    <p>Usamos a lista ordenada quando <strong>a ordem dos itens é importante</strong>.</p>
+
+    <!-- ol = ordered list/lista ordenada -->
+    <ol type="a" start="7">
+        <li>Comprar ingredientes</li>
+        <li>Misturar os ingredientes</li>
+        <li>Colocar no forno</li>
+        <li>Comer</li>
+    </ol>
+
+    <h3>Listas aninhadas</h3>
+
+    <ul>
+        <li>
+            Programação
+            <ul>
+                <li>Front-End</li>
+                <li>Back-End</li>
+                <li>Fullstack</li>
+            </ul>
+        </li>
+
+        <li>
+            Design
+            <ul>
+                <li>UI</li>
+                <li>UX</li>
+                <li>
+                    O que estudar?
+                    <ol>
+                        <li>Estudar o básico de cores</li>
+                        <li>Estudar o básico de tipografia</li>
+                        <li>Estudar o básico de design</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Lista de descrição (dl)</h3>
+    <p>Esse tipo de lista serve para representarmos termos e suas respectivas descrições.</p>
+
+    <!-- dl = description list/lista de descrição -->
+    <dl>
+        <!-- dt = description term/termo de descrição -->
+        <dt>HTML</dt>
+        <dd>É a linguagem de marcação utilizada para estruturar páginas web.</dd>
+        <!-- dd = data description -->
+
+        <dt>CSS</dt>
+        <dd>É a linguagem de estilo utilizada para estilizar páginas web.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>É a linguagem utilizada para adicionar comportamentos a páginas web.</dd>
+    </dl>
+
+</body>
+
+</html>
